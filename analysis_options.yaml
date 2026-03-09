@@ -12,3 +12,6 @@ linter:
     - implicit_call_tearoffs
     - avoid_print: true
     - prefer_single_quotes: true
+
+plugins:
+  riverpod_lint: ^3.1.3
