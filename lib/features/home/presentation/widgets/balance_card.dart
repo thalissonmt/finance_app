@@ -81,11 +81,7 @@ class BalanceCard extends StatelessWidget {
                           color: iconBackgroundColor,
                           shape: BoxShape.circle,
                         ),
-                        child: Icon(
-                          icon,
-                          size: 18,
-                          color: iconColor,
-                        ),
+                        child: Icon(icon, size: 18, color: iconColor),
                       ),
                       const SizedBox(width: 8),
                       Text(
