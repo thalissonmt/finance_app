@@ -1,0 +1,40 @@
+{
+  "@@locale": "pt",
+  "appTitle": "FinControl",
+  "helloUser": "Olá, {name}",
+  "@helloUser": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "dashboard": "Dashboard",
+  "dashboardSubtitle": "Seu resumo financeiro atualizado.",
+  "checkingAccount": "Conta Corrente",
+  "cajuBalance": "Saldo Caju",
+  "performance": "Desempenho",
+  "monthlySavings": "Economia do Mês",
+  "comparedToLastMonth": "Comparado ao mês anterior",
+  "income": "Entradas",
+  "expenses": "Saídas",
+  "creditCard": "Cartão de Crédito",
+  "currentInvoice": "Fatura Atual",
+  "dueOn": "Vence em {date}",
+  "@dueOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "spendingDivision": "Divisão de Gastos",
+  "personal": "Pessoal",
+  "thirdParty": "Terceiros/Emprestado",
+  "viewDetails": "Ver Detalhes",
+  "payInvoice": "Pagar Fatura",
+  "home": "Home",
+  "history": "History",
+  "thirdParties": "Terceiros",
+  "analysis": "Analysis"
+}

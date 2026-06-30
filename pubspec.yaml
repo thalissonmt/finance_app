@@ -10,6 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
 
   cupertino_icons: ^1.0.8
   flutter_riverpod: ^3.3.0
@@ -27,5 +30,5 @@ dev_dependencies:
   riverpod_generator: ^4.0.3
 
 flutter:
-
+  generate: true
   uses-material-design: true

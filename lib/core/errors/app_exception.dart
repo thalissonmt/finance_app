@@ -9,8 +9,7 @@ sealed class AppException implements Exception {
 }
 
 class NetworkException extends AppException {
-  const NetworkException([String message = 'Erro de conexão', Object? error])
-      : super(message, error);
+  const NetworkException([super.message = 'Erro de conexão', super.error]);
 }
 
 class ServerException extends AppException {
@@ -24,15 +23,9 @@ class ServerException extends AppException {
 }
 
 class UnauthorizedException extends AppException {
-  const UnauthorizedException([
-    String message = 'Sessão expirada',
-    Object? error,
-  ]) : super(message, error);
+  const UnauthorizedException([super.message = 'Sessão expirada', super.error]);
 }
 
 class UnknownException extends AppException {
-  const UnknownException([
-    String message = 'Erro inesperado',
-    Object? error,
-  ]) : super(message, error);
+  const UnknownException([super.message = 'Erro inesperado', super.error]);
 }
