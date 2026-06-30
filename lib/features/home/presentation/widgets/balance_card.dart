@@ -32,15 +32,7 @@ class BalanceCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: colorScheme.surface,
         borderRadius: BorderRadius.circular(12),
-        border: Border(
-          top: BorderSide(
-            color: topBorderColor ?? colorScheme.surfaceContainerHighest,
-            width: topBorderColor != null ? 4.0 : 1.0,
-          ),
-          bottom: BorderSide(color: colorScheme.surfaceContainerHighest),
-          left: BorderSide(color: colorScheme.surfaceContainerHighest),
-          right: BorderSide(color: colorScheme.surfaceContainerHighest),
-        ),
+        border: Border.all(color: colorScheme.surfaceContainerHighest),
         boxShadow: [
           BoxShadow(
             color: const Color(0xFF1A237E).withValues(alpha: 0.08),
@@ -50,9 +42,17 @@ class BalanceCard extends StatelessWidget {
         ],
       ),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(11),
         child: Stack(
           children: [
+            // Top accent bar (rendered separately to avoid non-uniform border)
+            if (topBorderColor != null)
+              Positioned(
+                top: 0,
+                left: 0,
+                right: 0,
+                child: Container(height: 4, color: topBorderColor),
+              ),
             // Decorative blob
             Positioned(
               right: -32,
